@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa Js</title>
+    <body>
+        <h2>A Vidente</h2>
+        <script>
+            function frase_vidente(previsao){
+                document.write(previsao);
+            }
+            var nome = "Thiago";
+            var filhos = 2;
+            var cidade = "Rio de Janeiro";
+            var profissao = "Desenvolvedor";
+            frase_vidente("A vidente prevê: "+nome+" terá "+filhos+" e viverá em "+cidade+" trabalhando como "+profissao)
+        </script>
+        <h2>Ilha deserta</h2>
+        <script>
+            function frase_ilha(itens){
+                document.write(itens);
+            }
+            var item1="Cantil";
+            var item2="Faca";
+            var item3="Corda";
+            frase_ilha("Eu levaria para uma ilha deserta: "+item1+", "+item2+", "+item3)
+        </script>
+        <h2>Animal</h2>
+        <script>
+            function escolha_animal(animal){
+                document.write(animal);
+                document.write("<br>")
+            }
+            var qual_animal="Guepardo"
+            escolha_animal("Num primeiro momento, eu gostaria de ser um: "+qual_animal)
+            var qual_animal="Aguia"
+            escolha_animal("Pensando melhor, prefiro ser uma: " +qual_animal)
+        </script>
+        <h2>TAREFA DE CASA</h2>
+        <script>
+            function pula_linha(){
+                document.write("<br>")
+            }
+            function dobro(numero_dobro){
+                var resultado_dobro=Math.round(numero_dobro*2);
+                document.write(resultado_dobro)
+                pula_linha()
+            }
+            dobro(4)
+            function metade(numero_metade){
+                var resultado_metade=Math.round(numero_metade/2);
+                document.write(resultado_metade)
+                pula_linha()
+            }
+            metade(4)
+            function saudacao(nome){
+                document.write("Olá "+nome+"!")
+                pula_linha()
+            }
+            saudacao("thiago")
+        </script>
+
+    </body>
