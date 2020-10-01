@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa PDF 13 CASA</title>
+</head>
+<body>
+    <h2> Divisão de Laranjas</h2>
+
+    <script>
+        function mostra(frase){
+            document.write(frase+"<br><br>")
+        }
+
+        function dividir_laranjas(qntd_laranjas,qntd_vizinhos){
+
+            var resultado_divisao = Math.trunc(qntd_laranjas/qntd_vizinhos)
+            var sobra_laranjas = qntd_laranjas%qntd_vizinhos
+
+            mostra("Para cada vizinho, Joselito dará "+resultado_divisao+" laranjas e ficará com "+sobra_laranjas+" laranjas")
+
+            return
+        }
+        dividir_laranjas(130,4)
+
+    </script>
+
+    <h2>pizzaria</h2>
+
+    <script>
+        function mostra(frase){
+            document.write(frase+"<br>")
+        }
+
+        function calcula_imposto(produto,custo,venda){
+            var imposto = (venda*8.9)/100
+            var lucro = venda-custo
+        mostra("Para a pizza "+produto+" o lucro liquido é de R$"+lucro.toFixed(2)+" e o imposto é de R$"+imposto.toFixed(2))
+        }
+        calcula_imposto("Portuguesa",20.15,30.99)
+
+    </script>
+   
+</body>
+
+</html>
