@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_button</title>
+</head>
+<body>
+    
+<script>
+    var botao = document.createElement('h2')
+    botao.textContent = "salve"
+    document.body.appendChild(botao)
+
+function clicar() 
+{
+    botao.innerHTML = "Cuspir Fogo"
+}
+
+function passarmouse()
+ {
+    botao.innerHTML = "Nome da Mãe"
+}
+
+function tirarfora(params) 
+{
+    botao.innerHTML = " Salve "
+}
+
+botao.addEventListener("click", clicar);
+botao.addEventListener("mousemove", passarmouse)
+botao.addEventListener("mouseout", tirarfora)
+
+
+</script>
+    
+   
+
+</body>
+</html>
