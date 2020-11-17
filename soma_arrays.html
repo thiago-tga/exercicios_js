@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr1 = [1,2,3]
+        var arr2 = [4,4,4]
+
+        function soma_resultado(resultado1,resultado2)
+        {
+            return resultado1+resultado2
+        }
+
+        function soma_arr(array)
+        {
+            var soma = 0
+            for (var i = 0;i < array.length;i++)
+            {
+                var elemento = array[i]
+                soma+=elemento
+            }
+            return soma
+        }   
+
+        var soma_arr1 = soma_arr(arr1)
+        var soma_arr2 = soma_arr(arr2)
+        var soma_final= soma_resultado(soma_arr1,soma_arr2)
+        console.log(soma_arr1)
+        console.log(soma_arr2)
+        console.log(soma_final)
+    
+
+
+
+
+
+    </script>
+</body>
+</html>

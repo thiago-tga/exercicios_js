@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matriculados = ['Scarlet','Moita','Erica','Thiago','Gabriel','David']
+        var lista_presenca= ['Scarlet','Moita','Thiago']
+        function calcula_presenca(alunos,presenca)
+        {
+            for (i=0;i<presenca.length;i++)
+            {
+               var confere = alunos.indexOf('presenca[i]')
+               var contabiliza = 0
+               if (confere!== -1)
+               {
+                 return contabiliza++;
+               }
+            }
+            return contabiliza
+    
+        }
+        calcula_presenca(matriculados,lista_presenca)
+    </script>
+</body>
+</html>
